@@ -3,6 +3,7 @@ resource "aws_vpc" "this" {
   tags = {
     Name = "${var.env}-vpc"
     Environment = var.env
+    provisionaer = "terraform"
   }
 }
 
